@@ -14,6 +14,10 @@ public class Money {
 
     }
 
+    public void add(Money money) {
+        amount+=money.amount;
+    }
+
     private static void checkAmount(int amount) {
         if(amount <= 0) {
             throw new AmountNotValidException();

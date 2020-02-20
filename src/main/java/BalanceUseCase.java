@@ -1,3 +1,4 @@
+
 public class BalanceUseCase {
 
     private BalanceRepository balanceRepository;
@@ -6,7 +7,8 @@ public class BalanceUseCase {
         this.balanceRepository = balanceRepository;
     }
 
-    public Money getBalance(Account account) {
-        return balanceRepository.findBalance(account);
+    public Money getBalance(Account account) throws AccountNotFoundException {
+        return balanceRepository.findBalance(account)
+                .orElseThrow(AccountNotFoundException::new);
     }
 }

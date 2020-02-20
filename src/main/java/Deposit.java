@@ -8,4 +8,12 @@ public class Deposit {
         this.money = money;
         this.account = account;
     }
+
+    public Money getMoney() {
+        return money;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
 }

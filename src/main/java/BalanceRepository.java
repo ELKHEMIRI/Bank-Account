@@ -1,6 +1,8 @@
+import java.util.Optional;
+
 public interface BalanceRepository {
 
-    Money findBalance(Account account);
+    Optional<Money> findBalance(Account account);
 
 
 }
