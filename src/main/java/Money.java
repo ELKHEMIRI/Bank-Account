@@ -15,13 +15,12 @@ public class Money {
     }
 
     public void add(Money money) {
-        amount+=money.amount;
+        amount += money.amount;
     }
 
-    private static void checkAmount(int amount) {
-        if(amount <= 0) {
-            throw new AmountNotValidException();
-        }
+    public void substract(Money money) {
+        checkAmount(amount - money.amount);
+        amount -= money.amount;
     }
 
     @Override
@@ -35,5 +34,11 @@ public class Money {
     @Override
     public int hashCode() {
         return Objects.hash(amount);
+    }
+
+    private static void checkAmount(int amount) {
+        if (amount < 0) {
+            throw new AmountNotValidException();
+        }
     }
 }

@@ -3,7 +3,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -61,32 +60,6 @@ public class DepositUseCaseIntegrationTest {
         assertEquals(Money.of(400), creditAccount1);
         assertEquals(Money.of(1400), creditAccount2);
 
-    }
-
-    class InMemoryRepository implements DepositRepository, BalanceRepository{
-
-        private Map<Account, Money> credits;
-
-        public InMemoryRepository(Map<Account, Money> credits) {
-            this.credits = credits;
-        }
-
-        @Override
-        public void save(Deposit deposit) {
-            Account account = deposit.getAccount();
-            Money money = deposit.getMoney();
-            if(credits.containsKey(account)) {
-                credits.put(account, credits.get(account))
-                        .add(money);
-                return;
-            }
-            credits.put(account, money);
-        }
-
-        @Override
-        public Optional<Money> findBalance(Account account) {
-            return Optional.ofNullable(credits.get(account));
-        }
     }
 
 }

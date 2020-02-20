@@ -29,6 +29,5 @@ public class DepositUseCaseTest {
 
         // Assert
         verify(depositRepository).save(eq(deposit));
-
     }
 }
