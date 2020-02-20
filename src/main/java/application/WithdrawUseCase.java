@@ -1,3 +1,8 @@
+package application;
+
+import domain.model.Withdraw;
+import domain.model.WithdrawRepository;
+
 public class WithdrawUseCase {
 
     private WithdrawRepository withdrawRepository;

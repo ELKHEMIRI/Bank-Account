@@ -1,3 +1,10 @@
+package application;
+
+import application.DepositUseCase;
+import domain.model.Account;
+import domain.model.Deposit;
+import domain.model.DepositRepository;
+import domain.model.Money;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

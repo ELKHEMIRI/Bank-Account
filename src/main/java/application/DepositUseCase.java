@@ -1,3 +1,8 @@
+package application;
+
+import domain.model.Deposit;
+import domain.model.DepositRepository;
+
 public class DepositUseCase {
 
     private DepositRepository depositRepository;

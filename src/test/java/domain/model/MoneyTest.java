@@ -1,3 +1,7 @@
+package domain.model;
+
+import domain.model.AmountNotValidException;
+import domain.model.Money;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

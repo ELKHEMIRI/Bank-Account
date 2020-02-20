@@ -1,19 +1,21 @@
-public class Withdraw {
+package domain.model;
+
+public class Deposit {
 
     private Money money;
 
     private Account account;
 
-    public Withdraw(Money money, Account account) {
+    public Deposit(Money money, Account account) {
         this.money = money;
         this.account = account;
     }
 
-    public Account getAccount() {
-        return account;
-    }
-
     public Money getMoney() {
         return money;
+    }
+
+    public Account getAccount() {
+        return account;
     }
 }

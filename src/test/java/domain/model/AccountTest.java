@@ -1,3 +1,7 @@
+package domain.model;
+
+import domain.model.Account;
+import domain.model.AccountNotValidException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;

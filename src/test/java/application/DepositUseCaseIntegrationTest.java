@@ -1,3 +1,9 @@
+package application;
+
+import domain.model.Account;
+import domain.model.Deposit;
+import domain.model.Money;
+import infrastructure.InMemoryRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

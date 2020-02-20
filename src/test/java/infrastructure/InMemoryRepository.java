@@ -1,7 +1,11 @@
+package infrastructure;
+
+import domain.model.*;
+
 import java.util.Map;
 import java.util.Optional;
 
-class InMemoryRepository implements DepositRepository, BalanceRepository, WithdrawRepository {
+public class InMemoryRepository implements DepositRepository, BalanceRepository, WithdrawRepository {
 
     private Map<Account, Money> credits;
 

@@ -2,8 +2,8 @@
 Think of your personal bank account experience When in doubt, go for the simplest solution
 
 # Requirements
-- Deposit and Withdrawal
-- Account statement (date, amount, balance)
+- domain.model.Deposit and Withdrawal
+- domain.model.Account statement (date, amount, balance)
 - Statement printing
  
 # User Stories

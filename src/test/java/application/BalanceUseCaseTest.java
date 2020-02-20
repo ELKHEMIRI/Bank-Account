@@ -1,3 +1,10 @@
+package application;
+
+import application.BalanceUseCase;
+import domain.model.Account;
+import domain.model.AccountNotFoundException;
+import domain.model.BalanceRepository;
+import domain.model.Money;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
